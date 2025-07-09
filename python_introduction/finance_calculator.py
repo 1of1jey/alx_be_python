@@ -1,8 +1,8 @@
 user = input("Enter your monthly income: ")
 monthly_income = int(user)
 user2 = input("Enter your total monthly expenses: ")
-total_monthly_expenses = int(user2)
-monthly_savings = float(monthly_income - total_monthly_expenses)
+monthly_expenses = int(user2)
+monthly_savings = monthly_income - monthly_expenses
 print(f"Your monthly savings are ${monthly_savings}")
 annual_interest_rate = 0.05
 Projected_year_savings = monthly_savings * 12 + (monthly_savings * 12 * annual_interest_rate)
