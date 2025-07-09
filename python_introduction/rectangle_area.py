@@ -1,4 +1,4 @@
 length = 10
 width = 5
-Area = length * width
-print(f"The area of the triangle is: {Area}")
+area = length * width
+print(f"The area of the triangle is: {area}")
