@@ -1,1 +1,1 @@
-.
+print("it was okay")
