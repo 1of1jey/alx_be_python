@@ -19,5 +19,3 @@ def main():
     display_current_datetime()
     calculate_future_date()
 
-if __name__ == "__main__":
-    main()
