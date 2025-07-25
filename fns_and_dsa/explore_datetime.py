@@ -20,4 +20,3 @@ def main():
     calculate_future_date()
 
 if __name__ == "__main__":
-    main()
