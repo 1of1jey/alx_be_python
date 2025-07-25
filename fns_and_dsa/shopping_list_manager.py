@@ -36,7 +36,7 @@ def main():
                 for idx, item in enumerate(shopping_list, start=1):
                     print(f"{idx}. {item}")
             else:
-                print("Your shopping list is currently empty.")
+                print("Your list is currently empty.")
 
         elif choice == '4':
             print("Goodbye!")
@@ -49,3 +49,4 @@ def main():
 if __name__ == "__main__":
     main()
 
+shopping
