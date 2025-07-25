@@ -10,4 +10,3 @@ def main():
     print(f"Result: {result}")
 
 if __name__ == "__main__":
-    main()
