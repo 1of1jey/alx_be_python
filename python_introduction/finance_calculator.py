@@ -1,6 +1,6 @@
 user = input("Enter your monthly income: ")
 monthly_income = int(user)
-user2 = input("Enter your total monthly expense: ")
+user2 = input("Enter your total monthly expenses: ")
 monthly_expenses = int(user2)
 monthly_savings = monthly_income - monthly_expenses
 print(f"Your monthly savings are ${monthly_savings}")
