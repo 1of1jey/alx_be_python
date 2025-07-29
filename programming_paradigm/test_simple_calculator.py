@@ -39,3 +39,8 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.divide(0, 5), 0)
         self.assertIsNone(self.calc.divide(5, 0))  # Division by zero
 
+    def test_division_edge_cases(self):
+        """Test edge cases for divide like large numbers and float precision."""
+        self.assertAlmostEqual(self.calc.divide(1, 3), 0.3333333333333333)
+        self.assertEqual(self.calc.divide(1e6, 1e3), 1000.0)
+
