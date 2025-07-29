@@ -54,3 +54,12 @@ class Library:
                 print(f"Returned: {book}")
                 return
         print(f"Book '{title}' was not checked out.")
+
+    def list_available_books(self):
+        """Prints all books that are currently available."""
+        available_books = [book for book in self._books if book.is_available()]
+        if available_books:
+            for book in available_books:
+                print(book)
+        else:
+            print("No books are currently available.")
