@@ -45,3 +45,12 @@ class Library:
                 print(f"Checked out: {book}")
                 return
         print(f"Book '{title}' is not available for checkout.")
+
+    def return_book(self, title):
+        """Returns a checked-out book to the library."""
+        for book in self._books:
+            if book.title == title and not book.is_available():
+                book.return_book()
+                print(f"Returned: {book}")
+                return
+        print(f"Book '{title}' was not checked out.")
