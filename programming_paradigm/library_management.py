@@ -26,3 +26,22 @@ class Book:
 
     def __str__(self):
         return f"{self.title} by {self.author}"
+
+class Library:
+    """Manages a collection of Book instances."""
+
+    def __init__(self):
+        self._books = []
+
+    def add_book(self, book):
+        """Adds a book to the library collection."""
+        self._books.append(book)
+
+    def check_out_book(self, title):
+        """Marks a book as checked out if it's available."""
+        for book in self._books:
+            if book.title == title and book.is_available():
+                book.check_out()
+                print(f"Checked out: {book}")
+                return
+        print(f"Book '{title}' is not available for checkout.")
