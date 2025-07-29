@@ -44,3 +44,6 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertAlmostEqual(self.calc.divide(1, 3), 0.3333333333333333)
         self.assertEqual(self.calc.divide(1e6, 1e3), 1000.0)
 
+    if __name__ == '__main__':
+        unittest.main()
+
