@@ -14,3 +14,11 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(-5, 5), 0)
         self.assertEqual(self.calc.add(0, 0), 0)
         self.assertEqual(self.calc.add(1.5, 2.5), 4.0)
+
+    def test_addition(self):
+        """Test the add method with various inputs."""
+        self.assertEqual(self.calc.add(2, 3), 5)
+        self.assertEqual(self.calc.add(-1, -1), -2)
+        self.assertEqual(self.calc.add(-5, 5), 0)
+        self.assertEqual(self.calc.add(0, 0), 0)
+        self.assertEqual(self.calc.add(1.5, 2.5), 4.0)
