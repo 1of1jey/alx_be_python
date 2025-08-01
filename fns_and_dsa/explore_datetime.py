@@ -13,7 +13,7 @@ def calculate_future_date():
         formatted_future = future_date.strftime("%Y-%m-%d")
         print(f"Future date: {formatted_future}")
     except ValueError:
-        print("Invalid input. Please enter an integer.")
+        print("Invalid input.Please enter an integer.")
 
 def main():
     display_current_datetime()
