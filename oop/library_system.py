@@ -39,11 +39,6 @@ class Library:
         self.books = []  # List to store book instances
 
     def add_book(self, book):
-        """Add a book to the library collection.
-
-        Args:
-            book (Book): An instance of Book, EBook, or PrintBook
-        """
         self.books.append(book)
 
     def list_books(self):
