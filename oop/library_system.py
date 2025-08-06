@@ -16,20 +16,19 @@ class Book:
         return f"Book: {self.title} by {self.author}"
 
 class EBook(Book):
-        """Derived class representing an electronic book."""
-
         def __init__(self, title, author, file_size):
-            """Initialize an ebook with title, author, and file size.
-
-            Args:
-                title (str): The title of the book
-                author (str): The author of the book
-                file_size (int): The file size in KB
-            """
             super().__init__(title, author)  # Call parent class constructor
             self.file_size = file_size
 
         def __str__(self):
-            """Return string representation of the ebook."""
             return f"EBook: {self.title} by {self.author}, File Size: {self.file_size}KB"
+
+
+class PrintBook(Book):
+    def __init__(self, title, author, page_count):
+        super().__init__(title, author)  # Call parent class constructor
+        self.page_count = page_count
+
+    def __str__(self):
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
