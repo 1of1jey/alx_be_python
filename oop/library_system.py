@@ -32,3 +32,22 @@ class PrintBook(Book):
     def __str__(self):
         return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
+
+class Library:
+    def __init__(self):
+        """Initialize an empty library."""
+        self.books = []  # List to store book instances
+
+    def add_book(self, book):
+        """Add a book to the library collection.
+
+        Args:
+            book (Book): An instance of Book, EBook, or PrintBook
+        """
+        self.books.append(book)
+
+    def list_books(self):
+        """Print details of each book in the library."""
+        for book in self.books:
+            print(book)
+
