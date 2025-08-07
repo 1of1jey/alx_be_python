@@ -26,13 +26,6 @@ class Calculator:
         Class methods have access to class attributes via the 'cls' parameter.
         They can access and modify class-level data.
 
-        Args:
-            cls: Reference to the class (Calculator).
-            a (int or float): First number to multiply.
-            b (int or float): Second number to multiply.
 
-        Returns:
-            int or float: The product of a and b.
-        """
         print(f"Calculation type: {cls.calculation_type}")
         return a * b
